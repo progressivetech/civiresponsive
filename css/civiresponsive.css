@@ -1,0 +1,90 @@
+/*
+ * This file contains CSS changes that override settings in civicrm.css
+ * that conflict or otherwise look bad with a bootstrap theme.
+ */
+
+/* 
+ * These settings essentially make the logo responsive - this is easier
+ * than trying to insert .img-responsive into the html. We need both to
+ * make the .navbar-header 100% wide, we need the img changes and we need
+ * to stop the a.logo from floating left.
+ */
+.navbar-header {
+  width: 100%;
+}
+
+#navbar .logo img {
+  max-width: 100%; 
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a.logo {
+  float: none !important;
+}
+
+/*
+ * The bootstrap theme seems to display this toggle when the screen is small
+ * even when there is nothing in the menu. Public facing civicrm pages
+ * typically don't use a Drupal menu, so we never want it displayed.
+ */
+.navbar-toggle {
+  display:none;
+}
+
+/*
+ * All the code below helps make civicrm forms look better with bootstrap.
+ * They can all hopefully be removed when civicrm supports bootstrap natively.
+ */
+
+/*
+ * Our typical background is white. And boostrap makes labels white.
+ * This code also makes the label stand out a bit more.
+ */
+div.crm-container label {
+  color: #3e3e3e;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+/* Don't make the price set labels stand out - otherwise it is too much
+ * standing out. */
+div.crm-container .price-set-option-content > label {
+  font-size: 1em;
+  color: #3e3e3e;
+}
+
+.crm-container .crm-section .label {
+  float: none;
+}
+
+.crm-container .crm-section .content {
+  margin-left: 10px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  margin: 0 4px 0;
+}
+
+.crm-container fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 10px 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+.crm-container fieldset legend {
+  margin-bottom: 4px;
+  /* Use bootstrap size, not CiviCRM size. */
+  font-size: 21px;
+}
+
+#crm-container.crm-public .crm-section, .crm-section {
+  margin-bottom: 20px;
+}
+
+.crm-container .crm-section .I_would_like_to_donate_another_-content {
+  display: inline;
+  margin-left: 0px;
+}
