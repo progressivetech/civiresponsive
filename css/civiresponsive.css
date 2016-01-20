@@ -26,15 +26,6 @@ a.logo {
 }
 
 /*
- * The bootstrap theme seems to display this toggle when the screen is small
- * even when there is nothing in the menu. Public facing civicrm pages
- * typically don't use a Drupal menu, so we never want it displayed.
- */
-.navbar-toggle {
-  display:none;
-}
-
-/*
  * All the code below helps make civicrm forms look better with bootstrap.
  * They can all hopefully be removed when civicrm supports bootstrap natively.
  */
