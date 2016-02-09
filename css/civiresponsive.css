@@ -40,6 +40,14 @@ div.crm-container label {
   font-size: 1.2em;
 }
 
+/*
+ * Except the simpledonate form... for which we want to preserve the 
+ * white text labels because they do appear on dark backgrounds.
+ */
+div.crm-container .simpleDonationForm .priceSet label {
+  color: #fff;
+}
+
 /* Don't make the price set labels stand out - otherwise it is too much
  * standing out. */
 div.crm-container .price-set-option-content > label {
