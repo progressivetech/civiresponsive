@@ -87,3 +87,13 @@ input[type="radio"], input[type="checkbox"] {
   display: inline;
   margin-left: 0px;
 }
+
+/*
+ * When using webform with themekey, the ajax upload breaks because themekey
+ * doesn't kick in properly on the ajax call, so we get Call to undefined
+ * function bootstrap_form_process().  As a work around, hide the ajax upload
+ * button so files get uploaded when you submit.
+ */
+button.ajax-processed {
+  display: none;
+}
