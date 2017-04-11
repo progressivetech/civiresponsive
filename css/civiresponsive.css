@@ -94,6 +94,6 @@ input[type="radio"], input[type="checkbox"] {
  * function bootstrap_form_process().  As a work around, hide the ajax upload
  * button so files get uploaded when you submit.
  */
-button.ajax-processed {
+.form-managed-file button.ajax-processed {
   display: none;
 }
