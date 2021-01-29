@@ -50,9 +50,10 @@ div.crm-container .simpleDonationForm .priceSet label {
 
 /* Don't make the price set labels stand out - otherwise it is too much
  * standing out. */
-div.crm-container .price-set-option-content > label {
-  font-size: 1em;
-  color: #3e3e3e;
+#crm-container.crm-public .price-set-row .crm-price-amount-label, div.crm-container .price-set-option-content > label {
+  font-size: 1em !important;
+  color: #3e3e3e !important;
+  font-weight: normal !important;
 }
 
 .crm-container .crm-section .label {
