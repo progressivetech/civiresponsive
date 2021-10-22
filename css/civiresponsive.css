@@ -34,10 +34,10 @@ a.logo {
  * Our typical background is white. And boostrap makes labels white.
  * This code also makes the label stand out a bit more.
  */
-div.crm-container .label, div.crm-container label {
+div.crm-container .label, div.crm-container label, #crm-container.crm-public .label {
   color: #3e3e3e;
   font-weight: normal;
-  font-size: 1.2em;
+  font-size: 18px;
 }
 
 /*
@@ -51,7 +51,7 @@ div.crm-container .simpleDonationForm .priceSet label {
 /* Don't make the price set labels stand out - otherwise it is too much
  * standing out. */
 #crm-container.crm-public .price-set-row .crm-price-amount-label, div.crm-container .price-set-option-content > label {
-  font-size: 1em !important;
+  font-size: 18px !important;
   color: #3e3e3e !important;
   font-weight: normal !important;
 }
@@ -97,4 +97,17 @@ input[type="radio"], input[type="checkbox"] {
  */
 .form-managed-file button.ajax-processed {
   display: none;
+}
+
+.crm-container a.button, .crm-container a.button:link, .crm-container a.button:visited, .crm-container input.crm-form-submit, .crm-container .ui-dialog-buttonset .ui-button, .crm-container input[type="button"], .crm-container .crm-button {
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 25px;
+  text-shadow: none;
+  background: none;
+  margin: 0 15px 15px 0;
+  background-color: #3a8233;
+  border: 0 solid transparent;
+  font-size: 18px;
 }
