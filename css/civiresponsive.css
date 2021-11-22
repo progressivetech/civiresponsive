@@ -111,3 +111,11 @@ input[type="radio"], input[type="checkbox"] {
   border: 0 solid transparent;
   font-size: 18px;
 }
+
+.crm-container .register_link-top {
+  margin-bottom: 10px;
+}
+
+div.action-link {
+  clear: both;
+}
