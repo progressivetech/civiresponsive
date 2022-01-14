@@ -129,3 +129,11 @@ div.action-link {
 div.collapsed {
   height: 30px;
 }
+
+/*
+ * The total amount doesn't get properly aligned on contribution
+ * pages without this fix.
+ */
+.crm-container .crm-section .label {
+  text-align: left;
+}
