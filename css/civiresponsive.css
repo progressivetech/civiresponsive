@@ -119,3 +119,13 @@ input[type="radio"], input[type="checkbox"] {
 div.action-link {
   clear: both;
 }
+
+/** 
+ * For some reason, in webform, if we have a collapsible fieldset
+ * that is collapsed by default, it is fully expanded (even though 
+ * the elements are invisible). This fixes that bug.
+ */ 
+/* div.panel-body .panel-collapse .collapse .fade .collapsed { */
+div.collapsed {
+  height: 30px;
+}
