@@ -137,3 +137,8 @@ div.collapsed {
 .crm-container .crm-section .label {
   text-align: left;
 }
+
+/* override default blue back ground */
+.crm-container h3 {
+  background-color: unset;
+}
