@@ -112,8 +112,8 @@ input[type="radio"], input[type="checkbox"] {
   font-size: 18px;
 }
 
-.crm-container .register_link-top {
-  margin-bottom: 10px;
+div.register_link-bottom, div.register_link-top {
+  margin-bottom: 30px !important;
 }
 
 div.action-link {
